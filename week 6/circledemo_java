@@ -1,0 +1,25 @@
+  
+import java.util.*;
+class CircleDemo
+{
+   public static void main(String args[])   
+   {   
+       Scanner s= new Scanner(System.in);
+       System.out.println("Enter the radius:");
+       double rad= s.nextDouble();      
+       double  a=area(rad);
+       double  p=peri(rad);
+       System.out.println("\nThe Details:-");
+       System.out.println(" Radius of circle = " + rad);
+       System.out.println(" Area of Circle = " + a); 
+       System.out.println(" Perimeter of Circle = " + p);      
+    }
+    static double area(double r)
+    {
+       return (22*r*r)/7;
+    }
+    static double peri(double r)
+    {
+       return (2*22*r)/7;
+    }
+}
